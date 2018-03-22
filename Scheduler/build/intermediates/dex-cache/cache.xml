@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b001d9fc7b92c50479331adf995a6e05c16ee0b4">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0b5436557b6202501436b2e487a9e349b02090ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/libs/mail.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/pre-dexed/debug/mail_2652fc8dacd4039dbd667a72e47b2735f24281e8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/libs/mail.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/transforms/dex/debug/folders/1000/2/mail_2652fc8dacd4039dbd667a72e47b2735f24281e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/libs/additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/transforms/dex/debug/folders/1000/2/additionnal_89f738bffd7a63cc82f9b2730c691e656f2b3ccb/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/schedulecreationlibrary/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d3c252a6fa110bceb3446d36e9ad1ecf10319d86">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/pre-dexed/debug/classes_f5d45a22d4be5fb8dc0255b70e1884813f165e7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/libs/activation.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/pre-dexed/debug/activation_9b29aaa01396a42803f28e6922bb263c3d0e155d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/libs/additionnal.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/pre-dexed/debug/additionnal_89f738bffd7a63cc82f9b2730c691e656f2b3ccb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/libs/activation.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/transforms/dex/debug/folders/1000/2/activation_9b29aaa01396a42803f28e6922bb263c3d0e155d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/apple/Projects/ETHZ/EPOS-Frontend-master/Scheduler/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2222049363174a5a67a7d3f72297ac6252cc788c/classes.dex" />
+    </item>
+
+</items>
