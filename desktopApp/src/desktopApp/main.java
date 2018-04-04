@@ -98,29 +98,28 @@ public class main {
         ArrayList<String> textFiles = new ArrayList<String>();
 
         String [] folders;
-        File rawDataset = new File(mainFolder+"old/dataset-raw/");
+        File rawDataset = new File(mainFolder+"raw/");
         folders = rawDataset.list();
 
+        int t=0;
         for (String f:folders) {
             if (f.contains(".")) {
                 continue;
             }
             String[] files = null;
-            File filePath = new File("/Users/apple/Projects/ETHZ/plannerApp-dataset/old/dataset-raw/" + f);
+            File filePath = new File("/Users/apple/Projects/ETHZ/plannerApp-dataset/raw/" + f);
             files = filePath.list();
 
             for (String a : files) {
                 if (a.contains(".txt")) {
-                    textFiles.add("/Users/apple/Projects/ETHZ/plannerApp-dataset/old/dataset-raw/" + f + a);
+                    textFiles.add("/Users/apple/Projects/ETHZ/plannerApp-dataset/raw/" + f + "/" + a);
+                    //System.out.println(textFiles.get(t));
                 }
 
             }
 
-
-            //// TODO: 3/22/18
-
             try {
-                br = new BufferedReader(new FileReader("/Users/apple/Projects/ETHZ/plannerApp-dataset/old/dataset-raw/fef823e7e5a5c88c/1.txt"));
+                br = new BufferedReader(new FileReader(textFiles.get(t)));
                 while (((line = br.readLine()) != null)) {
                     lines = line.split(csvSplitBy);
                 }
@@ -169,8 +168,8 @@ public class main {
             }
             schedulesList = schedules;
             sortSchedulesByRating();
-            String algCase = "TopRanked/detailedCSV/";
-            Action[][] fullList = getTopNRankedSchedules(10);
+            String algCase = "evenDist-10/detailedCSV/";
+            Action[][] fullList = getNRankedEvenlySpreadSchedules(10);
             parseableData = new String[fullList.length][actionNames.length][1440];
             for (int i = 0; i < parseableData.length; i++) {
                 for (int j = 0; j < parseableData[i].length; j++) {
@@ -315,6 +314,7 @@ public class main {
                 }
 
             }
+        t++;
         }
         //ToDo store devices in files.
 	}
@@ -383,7 +383,7 @@ public class main {
                 NRankedSchedules = new Action[n][];
                 NRankedSchedules[0] = finalList[0];
                 for(int i =1;i<n;i++){
-                    NRankedSchedules[i] = finalList[(finalList.length-(finalList.length/(n-i)))-1];
+                    NRankedSchedules[i] = finalList[(finalList.length-(finalList.length/(n-i)))];
                 }
             }else{
                 NRankedSchedules = new Action[finalList.length][];
@@ -403,8 +403,12 @@ public class main {
             if(finalList.length>=n){
                 topNRankedSchedules = new Action[n][];
                 int step = finalList.length/n;
-                for(int i = 0; i<n;i+=step){
-                    topNRankedSchedules[i] = finalList[i];
+                int k=0;
+                for(int i = 0; i<finalList.length;i+=step){
+                    if (k<n) {
+                        topNRankedSchedules[k] = finalList[i];
+                        k++;
+                    }
                 }
             }else{
                 topNRankedSchedules = new Action[finalList.length][];
