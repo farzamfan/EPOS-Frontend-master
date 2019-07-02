@@ -66,15 +66,16 @@ public class GMail {
 
         mailSession = Session.getInstance(emailProperties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("mailsenderforscheduler@gmail.com", "TestMail56");
+//                Add the email users name and password here
+                return new PasswordAuthentication("", "");
             }
         });
         mailSession.setDebug(true);
 
 
         emailMessage = new MimeMessage(mailSession);
-
-        emailMessage.setFrom(new InternetAddress("mailsenderforscheduler@gmail.com", fromEmail));
+//      Add the email address here as well
+        emailMessage.setFrom(new InternetAddress("", fromEmail));
 
         Log.i("GMail","toEmail: "+toEmailList);
         emailMessage.addRecipient(Message.RecipientType.TO,
